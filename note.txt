@@ -1,0 +1,384 @@
+JavaScript 
+-----------
+
+
+languages
+----------
+
+1) High level --> Malayalam , English , Python , c , c++ , javascript , Java ...     [ Human Understandable languages]
+
+2) Low Level --> Assembly languages   [Machine Understandable languages]
+
+
+Compilers , Interpreters  --->  Convert languages during run-time
+
+Node js --> Compiler and Interpreted
+
+
+--------------------------------------------------------------------------------------------------
+
+
+data display - method - console.log()
+
+function or methods --> Used to perform any task
+
+function - ()
+method - . ()                                                                 (eg : console.log() is a method)
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+Data Types on js
+
+1) String  -  'hello' , "apple"
+2) Number  -  0 , 1 , -5 , 0.5 , 1.0 , -8.9
+3) Bigint  -  Big integers
+4) Boolean  -  true (means 1) / false (means 0)
+5) Undefined  -  not defined datas
+6) Null  -  not existing
+7) Object -
+
+
+-----------------------------------------------------------------------------------------------
+
+
+data storing
+
+variables -->  used to store datas  -->  temporary storage
+
+strictly typed languages -- c , c++....
+
+dynamically typed languages -- javascript , python....
+
+
+-------------------------------------------------------------------------------------------------
+
+
+
+variable naming rules
+---------------------
+
+myNumber --  Camel Notation
+
+my_number --  Snake Notation
+
+start cheyyunna letter number akaruth (2name)  -- instead use _1  , a12364
+
+Don't use operator symbols (+-/*) in variable names 
+
+
+
+variable declaration in js
+---------------------------
+
+1) var  -->  we can change the content of that variable
+
+   var num=10
+
+2) const  -->  we cannot change the content (constant)
+
+
+3) let  --> Block {   }   --> Blockil mathram anu athinte scope ndavuka
+
+    {
+        let num = 9
+        console.log(num)
+    }
+
+    can't acceess out of the block
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+NB : javascript is a case sensitive language
+
+NB :  divisible means --> ethenkilum oru number divide cheythal reminder 0 kittanam (checking : num%10==0)
+
+NB :  nested  means --> onnu nte ullil mattonnu eyuthunnathine anu nested  nn parayuka (if,loop...)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Operators in JS
+---------------
+
+1) Assignment   --->    =
+
+2) Arithmatic   --->    + - * / % **                 (** -> Exponential means raise to)
+
+3) Relational   --->    < > <= >= == != ===
+
+4) Compound assignment  --->   += -= /= *= %= **=
+
+5) Increment or decrement  --->   ++ --
+
+6) Logical   --->   && -and   || -or     ! -not
+
+
+Flow of Controls
+----------------
+
+1) decision making - if , if else , if else if
+
+2) looping         - for , while
+
+3) switching       -  break  , continue
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Functions
+----------
+
+1) inbuilt   -  Already JavaScript Build cheytha Functions.  eg: typeof()
+
+2) user-defined  -  
+
+
+
+A code should Have :-
+
+1) reusabilty  -  Functions
+2) time complexity  -  loops
+3) space complexity -  variables
+4) length
+
+
+  
+code 1        code 2
+------        ------
+
+time -----    space -------
+space --       time --
+
+code 2 is better
+
+
+syntax
+------
+
+function functionName(){
+    //code
+}
+
+
+
+Hoisting
+---------
+
+ Hoisting -- define cheyyunnathinu munne thanne ath use cheyyan pattum     
+
+                 function supports hoisting
+
+ Variable don't support hoisting
+
+    eg: console.log(n)
+        var n=6
+
+
+--------------------------------------------------------------------------------------------
+
+
+variable types in function
+--------------------------
+
+1) local variables - parameters , var , let , const
+
+eg : function add(num1,num2) {
+    var  sum=num1+num2
+    console.log(sum);
+}
+
+Local variables = num1 , num2 , sum
+
+
+2) global variables - variables without variable declaration
+
+eg : function add(num1,num2) {
+       sum=num1+num2
+    console.log(sum);
+}
+
+global variable = sum
+
+
+
+--------------------------------------------------------------------------------------
+
+
+argument
+---------
+
+
+1) function without argument 
+
+2) function with argument
+
+3) function with return
+ 
+
+function with return
+---------------------
+
+return is used for reusable the code
+
+block nte purathokke console cheyyane return use cheyyanam
+
+only one data can return
+
+    eg: return sum
+
+one block can have only one return
+
+    eg : {
+        return ...
+    }
+
+if we return a function when it will stop , same as break
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ternary operator
+-----------------
+
+syntax 
+-------
+
+condition?true code:false code
+
+
+ith if/else condition u pakaram use cheyyunnathanu
+
+ithil if and else must ayitum use cheyyanam (if mathram lla case il ternary use cheyyan pattilla)
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+Arrow Functions
+---------------
+
+syntax
+-------
+
+const functionName=()=>code
+const functionName=arg1=>code
+const functionName=(arg1,arg2)=>code
+
+eg 1:
+
+    function add()=>{
+        return n1+n2
+    }
+
+
+eg 2: 
+
+const add=(n1,n2)=>return n1+n2
+
+    function add(n1,n2){
+        var sum=n1+n2
+        return sum
+    }
+
+
+eg 3: 
+
+const add=(n1,n2)=>{
+    var sum=n1+n2
+    return sum
+}
+
+
+
+
+
+
+Recursive function ---> A function call itself
+
+nested function  --->  
+
+callback function  --->  
+
+
+
+NB : Arrow function with retun studying better
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+String Programs
+---------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Data Collections in JS
+----------------------
+
+data collections are used to store collection of datas in same location
+
+- Array
+- Object
+
+
+
+Array
+-----
+
+Array is heterogeneous  --> Which means we ca store different datastypes (eg : string , number , boolean...)
+
+array follows linear data structure (string to store datas)
+
+
+NB : Array il loop use cheyyunnath of or in use cheythitanu
+
+
+algorithm complexity
+--------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+IMPORTANT
+
+
+Array methods
+-------------
+
+1) sort()            --->  sorting to ascending/descending    [output -> array]
+
+2) map()             ---> full elements kittan   [output -> new array]
+3) filter            --->  one element or more than one element (but not full elements)    [output -> new array]
+
+4) find()             --->  only one elements kittan   [output -> single element]
+
+5) reduce()           ---->  [output -> single element]
+6) reduceRight()      ---->     // same salary lla 2 employees ndel reduce.rigth use cheyyuka (appol first person name kittum , last aale kittan just reduce choose cheyyuka (comparison casil))  [output > first data]
+
+7) some()             ---->   output --> true / fslse  (oru element ndo ille enn check cheyyan)
+
+8) includes()         ---->   output --> true/false (same as some() but ...)
+
+9) forEach()          ---->    same as map but output is not an array and it has not an inbuilt return keyword
+
+10) flat()            ---->    convert nested array to single array
+
+11) reverse()         ---->    array ne reverse cheyyan vendi
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Oops  -  Object Oriented Programming
+------------------------------------
+
+procedural programming language
+object oriented programming language
